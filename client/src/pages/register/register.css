@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+}
+
+.registerConatiner {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerCard {
+    width: 420px;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registerCard .register-title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 4px 4px 7px #636462;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.registerForm {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registerForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    color: black;
+    border-radius: 5px;
+    border: none;
+}
+
+/*Button style*/
+
+.registerForm .submitBtn {
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #54C9FF;
+    color: rgb(43, 42, 42)
+}
+
+.registerForm .submitBtn:hover {
+    background-color: #33baf8;
+    color: white;
+}
+
+.submitBtn:disabled:hover{
+    cursor: no-drop;
+    background-color: #c1c4c5;
+}
+
+.registerForm .link {
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    color: rgb(43, 42, 42)
+}
+
+.registerForm .link:hover {
+    font-weight: normal;
+    color: white;
+    cursor: pointer;
+}

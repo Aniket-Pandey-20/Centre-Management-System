@@ -1,0 +1,210 @@
+/*Card background color*/
+.C {
+    background: rgb(254, 186, 150);
+    background: linear-gradient(90deg, rgba(254, 186, 150, 1) 25%, rgba(254, 148, 150, 1) 75%);
+}
+.A {
+    background: rgb(133, 196, 247);
+    background: linear-gradient(90deg, rgba(133, 196, 247, 1) 25%, rgba(38, 141, 224, 1) 75%);
+}
+.B {
+    background: rgb(125, 216, 208);
+    background: linear-gradient(90deg, rgba(125, 216, 208, 1) 25%, rgba(39, 201, 179, 1) 75%);
+}
+/*Icon design*/
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.dashboardContainer{
+    width:100vw;
+    background: #F2F6FD;
+    min-height: 100vh;
+    height: auto;
+    padding:15px 20px;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+.dashWrapper{
+    margin: auto;
+    width:85vw;
+}
+
+
+/*Heading*/
+
+.dash-heading{
+    font-size: 30px;
+    color: #3e454d;
+    letter-spacing: 1.5px;
+}
+.dash-title-icon {
+    border-radius: 4px;
+    margin-right: 1rem;
+    padding: 8px;
+    color:#846EFD;
+    padding-top: 4px;
+    border:1px solid#846EFD;
+}
+.dash-title-icon:hover{
+    background-color: #846EFD;
+    color: white;
+}
+.dash-head{
+    width: 100%;
+    display: flex;
+    align-items: center !important;
+    justify-content: space-between;
+    color: #000;
+    font-size: 1.125rem;
+    margin-bottom:2.5rem;
+}
+
+/*Card desing*/
+
+.card{
+    border: none;
+    word-wrap: break-word;
+    max-width: 95%;
+    max-height: 250px;
+    cursor: pointer;
+}
+.card:hover{
+    -webkit-box-shadow: 10px 10px 39px 0px rgb(180, 179, 180);
+        -moz-box-shadow: 10px 10px 39px 0px rgb(180, 179, 180);
+        box-shadow: 10px 10px 39px 0px rgb(192, 191, 192);
+}
+.card-body{
+    padding:20px 30px;
+    position: relative;
+    text-decoration: none;
+}
+.card-body img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    vertical-align: middle;
+    border: none;
+}
+.card-body>h2{
+    display: block;
+    font-size: 1.5rem;
+}
+.card-body>h4{
+    font-size: 1.13rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Graph Design*/
+.dashGraphs{
+    margin-top: 5vh;
+    width:98.5%;
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.dashGraph-title{
+    color: #343a40;
+    margin-bottom: 0.75rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.125rem;
+    word-wrap: break-word;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.dashGraph1,.dashGraph2{
+    height: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.75rem;
+    -webkit-box-shadow: 10px 10px 39px 0px rgba(211, 208, 211, 0.6);
+    -moz-box-shadow: 10px 10px 39px 0px rgb(211, 208, 211,0.6);
+    box-shadow: 10px 10px 39px 0px rgb(216, 215, 216,0.6);
+}
+.dashGraph1{
+    margin-right: 10px;
+    flex: 2;
+}
+.dashGraph2{
+    margin-left:10px;
+    flex:1;
+}
+
+/*Graph Carousel*/
+.carousel{
+    margin-top: 10px;
+    height: 100%;
+    color: black;
+    padding:0 8px;
+}
+.carousel button{
+    margin-top: auto;
+    margin-bottom: 15px;
+    width:25px;
+    height: 25px;
+    border-radius: 5px;
+    filter: invert(100%);
+    background-color: #384149;
+}
+
+/*media query*/
+
+@media screen and (max-width: 913px) {
+    .C .card-body>h4>span{
+        letter-spacing: 1.77px !important;
+    }
+    .B .card-body>h4>span {
+        letter-spacing: 1px !important;
+    }
+    .dashGraphs{
+        flex-direction: column;
+        width: 100%;
+    }
+    .dashGraph2{
+        margin:auto;
+        width:100%;
+        margin-bottom: 20px;
+    }
+    .dashGraph-title{
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .dashboardContainer{
+        padding: 10px;
+    }
+    .head-title{   
+        margin-left:10px !important;
+    }
+    .col-hid{
+        display: none;
+    }
+    .col-mob{
+        display: block !important;
+        margin-top: 10px;
+        width: 98%;
+    }
+    .card {
+        border: none;
+        word-wrap: break-word;
+        max-width: 100%;
+        max-height: 250px;
+        margin: 10px 5px;
+        cursor: pointer;
+    }
+    .dashGraph1{
+        display: none;
+    }
+    .dashGraphs{
+        margin-top: 20px;
+    }
+}
+  

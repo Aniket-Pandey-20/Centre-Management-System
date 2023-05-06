@@ -1,0 +1,145 @@
+.formContainer{
+    background-color: #F8F9FA;
+}
+
+.sectionContainer{
+    margin: auto;
+    width: 80vw;
+    overflow: hidden;
+    height: fit-content;
+    display: flex;
+    flex-direction:column;
+}
+.sectionHeadings{
+    display: flex;
+    flex-direction: row;
+    padding:5px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.sectionHeading{
+    margin:5px;
+    margin-bottom: 15px;
+    flex:1;
+    text-align: start;
+    padding-bottom: 7px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: #b1adad;
+    border-bottom: 5px solid #EAEAEA;
+}
+.sectionHeading.active{
+    color: #2ba0d6;
+    border-bottom: 5px solid #2ba0d6;
+}
+
+.mainHeading{
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.sectionInput{
+    margin: auto;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    width:97%;
+    padding:20px;
+    background-color: white;
+}    
+
+.section{
+    display: none;
+}
+
+.section.active{
+    display:block;
+}
+
+/*inside form style*/
+.selectBar {
+    font-size: 15px;
+}
+.division{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    height: auto;
+}
+.division>span {
+    width: 100%;
+    margin: 10px;
+}
+
+/*For input tag*/
+label {
+    font-size: 12px;
+    font-weight: 500;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+
+}
+input {
+    width: 100%;
+    margin:1px 0;
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC;
+    font-size: 13px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*for Buttons*/
+
+.formContainer button {
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    background-color: #54C9FF;
+}
+
+.formContainer  button:hover {
+    background-color: #33baf8;
+    cursor: pointer;
+    color: white;
+}
+.prevNextBtn{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*media queires*/
+
+@media screen and (max-width: 950px) {
+    .division {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .division>span {
+        flex: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sectionContainer{
+        width: 100vw;
+    }
+
+    .mainHeading{
+        padding-top:50px;
+        font-size: 2rem;
+    }
+
+    .division{
+        flex-direction: column;
+    }
+}

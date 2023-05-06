@@ -1,0 +1,16 @@
+@media screen and (max-width:991px) {
+    .navbar {
+        margin: -7px 0;
+    }
+}
+
+.navbar-nav{
+    height: 40px;
+    width:200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logoutBtn{
+    margin-right: 15px !important;
+}
